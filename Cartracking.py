@@ -41,6 +41,13 @@ while True:
 
     #display the frame
     cv2.imshow("tracking", frame)
+    key = cv2.waitKey(1)
+    if key == 32:
+        break
+
+    screen.release()
+    cv2.destroyAllWindows()
+    
 
 
 
